@@ -1,0 +1,247 @@
+
+* {
+  font-family: system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#main{
+  font-size: xx-large;
+  margin-bottom: 10px;
+}
+
+#sub {
+  color: #444;
+  font-weight: 500;
+  font-size: large;
+  margin-bottom: 5px;
+  unicode-bidi: isolate;
+}
+
+#secondary{
+  font-size: medium;
+}
+
+.containerhead {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: left;
+  padding: 10px;
+  height: 300px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.profile-img {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  width: 200px;
+  border-radius: 50%;
+  overflow: hidden; 
+  object-fit: cover;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header p {
+  margin: 0;
+  text-align: center;
+  font-size: 13px;
+  margin-bottom: 5px;
+  line-height: 20px;
+}
+
+.divider {
+  width: 1px;
+  height: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: black;
+  margin-bottom: 10px;
+  overflow: hidden;
+  margin: 0 5px;
+}
+
+.social-media-block {
+    color: #777;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #eee;
+    padding: 4px;
+    height: 32px;
+    width: 32px;
+    border-radius: 6px;
+    transition: all .3s ease;
+    margin-right:10px;
+  }
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 800px;
+  margin:auto;
+  position: relative;
+}
+nav{
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+nav a{
+  flex-direction: column;
+  align-content:center;
+  color: #666;
+  cursor: pointer;
+  padding: 10px;
+  text-decoration: none;
+}
+nav a:hover{
+  color: rgb(40, 140, 211);
+}
+.blogcontainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.blogbox {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-height: 300px;
+  width: 100%; 
+  flex: 1;
+  flex-direction: column;
+}
+.blogbox h1, .blogbox h2, .blogbox p {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px 10px 5px 10px;
+}
+
+.blogbox h1 {
+  margin-top: 5px;
+}
+
+.blogbox h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+.blogbox p {
+  font-size: 12px;
+}
+.hidden{
+  display: none;
+}
+.active{
+  display: block;
+}
+.content .blogbox h2{
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1em;
+  color:#666;
+  font-weight:normal;
+}
+
+
+
+/* Media query for responsiveness */
+@media (max-width: 800px) {
+  .profile {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-img {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+
+  .text {
+    align-items: center;
+    text-align: center;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header p {
+    padding: 5px 0;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .divider {
+    width: 80%;
+    height: 1px;
+    background-color: black;
+  }
+  .containerhead {
+    height: auto;
+  }
+  .content {
+    width: 100%;
+    padding: 10px;
+    border: none; /* Remove border on smaller screens for better layout */
+}
+
+.blogcontainer {
+    width: 100%;
+    padding: 0;
+}
+
+.blogbox {
+    min-height: auto;
+    margin-bottom: 10px; /* Add margin between blog boxes */
+    padding: 10px;
+}
+
+.blogbox h1 {
+    font-size: 1.2em;
+}
+
+.blogbox h2 {
+    font-size: 1em;
+}
+
+.blogbox p {
+    font-size: 0.9em;
+}
+
+}
