@@ -159,6 +159,7 @@ nav a:hover{
 }
 .active{
   display: block;
+  width:100%;
 }
 .content .blogbox h2{
   margin-top: 0;
@@ -166,6 +167,14 @@ nav a:hover{
   font-size: 1em;
   color:#666;
   font-weight:normal;
+}
+li{
+  margin-left:40px;
+  padding:  5px 0px 5px 0px;
+}
+ul{
+  font-size: 1em;
+  color:#666;
 }
 
 
