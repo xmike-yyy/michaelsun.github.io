@@ -176,6 +176,12 @@ ul{
   font-size: 1em;
   color:#666;
 }
+ul li a {
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+}
+
 
 
 
@@ -214,12 +220,6 @@ ul{
     padding: 10px;
     text-align: center;
     width: 100%;
-  }
-
-  .divider {
-    width: 80%;
-    height: 1px;
-    background-color: black;
   }
   .containerhead {
     height: auto;
