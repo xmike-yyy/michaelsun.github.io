@@ -119,6 +119,14 @@ nav a{
 nav a:hover{
   color: rgb(40, 140, 211);
 }
+.blogcontainer button{
+  background: none;
+  border: none;
+}
+.blogcontainer button:hover{
+  color: rgb(40, 140, 211);
+  cursor: pointer;
+}
 .blogcontainer {
   display: flex;
   flex-direction: column;
