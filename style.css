@@ -123,6 +123,13 @@ nav a:hover{
   background: none;
   border: none;
 }
+button.active{
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 5px 10px 5px 10px;
+
+}
 .blogcontainer button:hover{
   color: rgb(40, 140, 211);
   cursor: pointer;

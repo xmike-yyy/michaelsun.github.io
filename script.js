@@ -19,11 +19,9 @@ function showSection(id) {
     const active = document.getElementById(id);
     active.classList.remove('hidden');
     active.classList.add('active');
-    const buttons = document.querySelectorAll('main .read');
-    buttons.forEach(button => {
-        button.classList.remove('hidden');
-        button.classList.add('read');;
-    })
+    document.querySelectorAll('button.hidden').forEach(button => {
+        button.classList.replace('hidden', 'active');
+    });
 
 
     // Optional: If you have a specific function to show blogs
@@ -65,13 +63,14 @@ function specificBlog(name, id, blog){
         section.classList.add('hidden');
     });
     const active = document.getElementById(name);
-    console.log(active);
     active.classList.remove('hidden');
     active.classList.add('active');
     fetchAndInsertContent(id, blog, true);
-    const button = document.querySelectorAll('main .read');
-    button.classList.remove('read');
-    button.classList.add('hidden');
+    document.querySelectorAll('button.active').forEach(button => {
+        console.log("ahh")
+        button.classList.replace('active', 'hidden');
+    });
+    
 }
 
 document.addEventListener("DOMContentLoaded", function() {
