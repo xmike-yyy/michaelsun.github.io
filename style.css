@@ -22,7 +22,9 @@
 #secondary{
   font-size: medium;
 }
-
+section{
+  margin-bottom: 30px;
+}
 .containerhead {
   display: flex;
   justify-content: center;
@@ -151,7 +153,7 @@ button.active{
   flex: 1;
   flex-direction: column;
 }
-.blogbox h1, .blogbox h2, .blogbox p{
+.blogbox h1, .blogbox h2 {
   width: 100%;
   box-sizing: border-box;
   padding: 5px 10px 5px 10px;
@@ -167,7 +169,10 @@ button.active{
   font-size: 1em;
 }
 .blogbox p {
-  font-size: 18px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px 0px 5px 0px;
 }
 .hidden{
   display: none;
@@ -185,7 +190,7 @@ button.active{
 }
 li{
   margin-left:40px;
-  padding:  5px 0px 5px 0px;
+  padding:  10px 0px 10px 0px;
 }
 ul{
   font-size: 1em;
@@ -261,7 +266,7 @@ ul li a {
 }
 
 .blogbox p {
-    font-size: 18px;
+    font-size: 14px;
 }
 
 }
