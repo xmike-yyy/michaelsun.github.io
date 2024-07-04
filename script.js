@@ -1,21 +1,17 @@
 function showSection(id) {
-    // Get all sections with the 'hidden' class
     const sections = document.querySelectorAll('main .content section');
 
-    // Loop through all sections and hide them
     sections.forEach(section => {
         section.classList.remove('active');
         section.classList.add('hidden');
     });
     const more = document.querySelectorAll('main .blogcontainer section');
 
-    // Loop through all sections and hide them
     more.forEach(section => {
         section.classList.remove('hidden');
         section.classList.add('active');
     });
 
-    // Show the selected section
     const active = document.getElementById(id);
     active.classList.remove('hidden');
     active.classList.add('active');
@@ -24,7 +20,6 @@ function showSection(id) {
     });
 
 
-    // Optional: If you have a specific function to show blogs
     showBlogs();
     
 }
@@ -40,10 +35,10 @@ function fetchAndInsertContent(blogNumber, className, need){
             const h2 = temp.querySelector('h2');
             if (h1) blogBox.querySelector('h1').innerHTML = temp.querySelector('h1').innerHTML;
             if (h2) blogBox.querySelector('h2').innerHTML = temp.querySelector('h2').innerHTML;
-            const p = temp.querySelector('p');
+            const p = temp.querySelector('.paragraph');
 
             if (need === true){
-                if (p) blogBox.querySelector('p').innerHTML = temp.querySelector('p').innerHTML;
+                if (p) blogBox.querySelector('p').innerHTML = temp.querySelector('.paragraph').innerHTML;
             }
             else{
                 if (p) blogBox.querySelector('p').innerHTML = "";
@@ -67,7 +62,6 @@ function specificBlog(name, id, blog){
     active.classList.add('active');
     fetchAndInsertContent(id, blog, true);
     document.querySelectorAll('button.active').forEach(button => {
-        console.log("ahh")
         button.classList.replace('active', 'hidden');
     });
     

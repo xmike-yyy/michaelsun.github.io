@@ -151,7 +151,7 @@ button.active{
   flex: 1;
   flex-direction: column;
 }
-.blogbox h1, .blogbox h2, .blogbox p {
+.blogbox h1, .blogbox h2, .blogbox p{
   width: 100%;
   box-sizing: border-box;
   padding: 5px 10px 5px 10px;
@@ -167,7 +167,7 @@ button.active{
   font-size: 1em;
 }
 .blogbox p {
-  font-size: 12px;
+  font-size: 18px;
 }
 .hidden{
   display: none;
@@ -197,10 +197,6 @@ ul li a {
   background-color: inherit;
 }
 
-
-
-
-/* Media query for responsiveness */
 @media (max-width: 800px) {
   .profile {
     flex-direction: column;
@@ -242,7 +238,7 @@ ul li a {
   .content {
     width: 100%;
     padding: 10px;
-    border: none; /* Remove border on smaller screens for better layout */
+    border: none;
 }
 
 .blogcontainer {
@@ -252,7 +248,7 @@ ul li a {
 
 .blogbox {
     min-height: auto;
-    margin-bottom: 10px; /* Add margin between blog boxes */
+    margin-bottom: 10px; 
     padding: 10px;
 }
 
@@ -265,7 +261,7 @@ ul li a {
 }
 
 .blogbox p {
-    font-size: 0.9em;
+    font-size: 18px;
 }
 
 }
