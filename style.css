@@ -22,9 +22,6 @@
 #secondary{
   font-size: medium;
 }
-section{
-  margin-bottom: 30px;
-}
 .containerhead {
   display: flex;
   justify-content: center;
@@ -104,6 +101,7 @@ section{
   width: 800px;
   margin:auto;
   position: relative;
+  margin-bottom: 50px;
 }
 nav{
   text-align: center;
